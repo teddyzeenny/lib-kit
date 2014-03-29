@@ -1,6 +1,6 @@
 // the base for dist files
-var baseDistFile = 'dist/<%= pkg.name %>-<%= pkg.version %>.';
-var builds = ['amd.', '' ];
+var baseDistFile = 'dist/<%= pkg.name %>';
+var builds = [''];
 var s3Uploads = [];
 builds.forEach(function(build){
   var srcFile = baseDistFile + build + 'js';

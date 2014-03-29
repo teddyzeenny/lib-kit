@@ -6,8 +6,6 @@
 </head>
 <body>
   <div id='mocha'></div>
-  <script src='../vendor/loader.js'></script>
-  <script src='../dist/thing.amd.js'></script>
   <script src='vendor/assert.js'></script>
   <script src='vendor/mocha.js'></script>
   <script>
@@ -17,7 +15,7 @@
     });
     mocha.globals(['setTimeout']);
   </script>
-  <script src='../tmp/tests.amd.js'></script>
+  <script src='tests.js'></script>
   <script>
 
     Object.keys(require.entries).filter(function(file) {
